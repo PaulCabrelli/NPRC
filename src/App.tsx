@@ -195,7 +195,7 @@ function App() {
                 <p className="eyebrow">Plan your visit <span className="section-index">03 / FLYING TIMES</span></p>
                 <h2>When the field<br />comes alive.</h2>
               </div>
-              <p className="flying-intro">Both electric and internal combustion modes can be flown. Check the times before setting off, and always put safety first.</p>
+              <p className="flying-intro">Both electric and internal combustion rc models can be flown. Check the times before setting off, and always put safety first.</p>
             </div>
             <div className="schedule-grid">
               <Schedule title="Electric & gliders" rows={electricHours} marker="01" />
