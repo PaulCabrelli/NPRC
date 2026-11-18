@@ -102,6 +102,8 @@ function App() {
     <>
       <div className="topline">
         <span>Northwick Park · Harrow, London</span>
+        {/* This link is for the associated model shop, Monarch Models, which is not part of the club.
+        but it is not working properly. */}
         <a href="https://www.monarchmodels.co.uk/" target="_blank" rel="noreferrer">
           Associated model shop <ArrowUpRight size={13} aria-hidden="true" />
         </a>
