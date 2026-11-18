@@ -24,7 +24,7 @@ const galleryLabels = [
 ]
 
 const gallery = galleryLabels.map((label, index) => ({
-  src: `/Gallery_images/gallery-${String(index + 1).padStart(2, '0')}.${index === 22 ? 'png' : 'jpg'}`,
+  src: `${import.meta.env.BASE_URL}Gallery_images/gallery-${String(index + 1).padStart(2, '0')}.${index === 22 ? 'png' : 'jpg'}`,
   alt: label,
   label,
 }))
@@ -112,7 +112,7 @@ function App() {
         <section className="hero" aria-labelledby="hero-title">
           <img
             className="hero-image"
-            src="/images/hero-flight.jpg"
+            src={`${import.meta.env.BASE_URL}images/hero-flight.jpg`}
             alt="A model aircraft in flight over Northwick Park"
             fetchPriority="high"
           />
@@ -178,7 +178,12 @@ function App() {
         </section>
 
         <section className="visit-section" id="visit">
-          <div className="visit-photo" role="img" aria-label="Model aircraft gathered at the club field" />
+          <div
+            className="visit-photo"
+            role="img"
+            aria-label="Model aircraft gathered at the club field"
+            style={{ backgroundImage: `url("${import.meta.env.BASE_URL}images/club-day.jpg")` }}
+          />
           <div className="visit-content">
             <p className="eyebrow">The field is closer than you think <span className="section-index">04 / FIND US</span></p>
             <h2>See you<br />at the <em>field.</em></h2>
