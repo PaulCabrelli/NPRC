@@ -47,6 +47,29 @@ const fees = [
   { name: 'Brent Council permit', amount: '£48', detail: 'per year' },
 ]
 
+const clubHistory = [
+  {
+    period: 'Early 1970s',
+    title: 'Sunday mornings by the railway',
+    description: 'Northwick Park drew curious crowds to watch model aircraft. Flyers used a concrete cricket pitch beside the railway as an improvised runway.',
+  },
+  {
+    period: 'A growing club',
+    title: 'A place to learn and belong',
+    description: 'Radio control brought new possibilities. Members flew together and gathered regularly, sharing their knowledge, aircraft and enthusiasm.',
+  },
+  {
+    period: 'Through change',
+    title: 'Finding a way to keep flying',
+    description: 'Changing access and noise restrictions brought difficult stretches, including a move away from the park. The club later found its way back to Northwick Park.',
+  },
+  {
+    period: 'Today',
+    title: 'The story carries on',
+    description: 'Even after further changes to the field and flying arrangements, club members kept advocating for their place in the park—and kept flying.',
+  },
+]
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(null)
@@ -101,6 +124,7 @@ function App() {
         </button>
         <nav id="main-navigation" className={menuOpen ? 'main-nav is-open' : 'main-nav'} aria-label="Main navigation">
           <a href="#club" onClick={closeMenu}>The club</a>
+          <a href="#story" onClick={closeMenu}>Our story</a>
           <a href="#flying" onClick={closeMenu}>Flying times</a>
           <a href="#gallery" onClick={closeMenu}>Gallery</a>
           <a href="#visit" onClick={closeMenu}>Find us</a>
@@ -142,11 +166,36 @@ function App() {
           <div className="intro-stamp" aria-hidden="true"><span>EST.</span><strong>1970s</strong><span>AND STILL FLYING</span></div>
         </section>
 
+        <section className="history-section" id="story">
+          <div className="section-wrap history-inner">
+            <div className="history-heading">
+              <p className="eyebrow">From the club’s archive <span className="section-index">02 / OUR STORY</span></p>
+              <h2>A field with<br /><span>a long story.</span></h2>
+              <p>Model flying has been part of Northwick Park for generations. Club member Derek Morrison recalls the people, changes and determination that kept it in the air.</p>
+              <a className="text-link" href="https://www.northwickparkflyingclub.co.uk/about" target="_blank" rel="noreferrer">
+                Read Derek’s full history <ArrowUpRight size={15} />
+              </a>
+            </div>
+            <div className="history-timeline">
+              {clubHistory.map((event) => (
+                <article className="history-event" key={event.period}>
+                  <span className="history-period">{event.period}</span>
+                  <div>
+                    <h3>{event.title}</h3>
+                    <p>{event.description}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+            <p className="history-credit">A short retelling of Derek Morrison’s account, <a href="https://www.northwickparkflyingclub.co.uk/about" target="_blank" rel="noreferrer">published by Northwick Park Flying Club</a>.</p>
+          </div>
+        </section>
+
         <section className="flying-section" id="flying">
           <div className="section-wrap flying-inner">
             <div className="flying-heading">
               <div>
-                <p className="eyebrow">Plan your visit <span className="section-index">02 / FLYING TIMES</span></p>
+                <p className="eyebrow">Plan your visit <span className="section-index">03 / FLYING TIMES</span></p>
                 <h2>When the field<br />comes alive.</h2>
               </div>
               <p className="flying-intro">The field is shared by different kinds of flying. Check the times before setting off, and always put safety first.</p>
@@ -162,7 +211,7 @@ function App() {
 
         <section className="gallery-section section-wrap" id="gallery">
           <div className="gallery-heading">
-            <div><p className="eyebrow">A view from the flight line <span className="section-index">03 / GALLERY</span></p><h2>Small aircraft.<br /><span>Wide horizons.</span></h2></div>
+            <div><p className="eyebrow">A view from the flight line <span className="section-index">04 / GALLERY</span></p><h2>Small aircraft.<br /><span>Wide horizons.</span></h2></div>
             <span className="gallery-total">{gallery.length} PHOTOGRAPHS</span>
           </div>
           <div className="gallery-grid">
@@ -185,7 +234,7 @@ function App() {
             style={{ backgroundImage: `url("${import.meta.env.BASE_URL}images/club-day.jpg")` }}
           />
           <div className="visit-content">
-            <p className="eyebrow">The field is closer than you think <span className="section-index">04 / FIND US</span></p>
+            <p className="eyebrow">The field is closer than you think <span className="section-index">05 / FIND US</span></p>
             <h2>See you<br />at the <em>field.</em></h2>
             <p className="visit-copy">The flying site is in the field on the left-hand side of Northwick Park. Access is off Norval Road, with parking nearby inside the park grounds.</p>
             <a className="button button-ink" href="https://www.google.com/maps/search/?api=1&query=Northwick+Park+Norval+Road+Harrow" target="_blank" rel="noreferrer">
@@ -197,7 +246,7 @@ function App() {
 
         <section className="membership-section section-wrap" id="membership">
           <div className="membership-heading">
-            <p className="eyebrow">A few things to get airborne <span className="section-index">05 / MEMBERSHIP</span></p>
+            <p className="eyebrow">A few things to get airborne <span className="section-index">06 / MEMBERSHIP</span></p>
             <h2>Start with<br /><span>a conversation.</span></h2>
             <p>New to the club? Send an expression of interest and the members will share the welcome pack and help you understand what you need to fly.</p>
             <a className="text-link" href="mailto:test.email@googlemail.com?subject=Northwick%20Park%20RC%20Model%20Flying%20Club">Ask about joining <ArrowUpRight size={15} /></a>

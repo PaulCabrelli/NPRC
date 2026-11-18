@@ -71,6 +71,19 @@ h1, h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; letter-s
 .intro-stamp span { font-size: 7px; letter-spacing: .15em; }
 .intro-stamp strong { margin: 4px 0; font-family: 'Barlow Condensed', sans-serif; font-size: 27px; }
 
+.history-section { padding: 100px 0 78px; background: var(--sky); }
+.history-inner { display: grid; grid-template-columns: .85fr 1.15fr; column-gap: 9%; }
+.history-heading h2 { margin: 22px 0 18px; font-size: clamp(58px, 7.3vw, 92px); line-height: .87; text-transform: uppercase; }
+.history-heading h2 span { color: #7d9384; }
+.history-heading > p:not(.eyebrow) { max-width: 390px; margin-bottom: 20px; color: #4a655d; font-size: 13px; line-height: 1.8; }
+.history-timeline { border-top: 1px solid rgba(24,60,54,.3); }
+.history-event { display: grid; grid-template-columns: 105px 1fr; gap: 20px; padding: 23px 0; border-bottom: 1px solid rgba(24,60,54,.22); }
+.history-period { padding-top: 3px; color: #bc6542; font-size: 9px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.history-event h3 { margin: 0 0 7px; font-family: 'Barlow Condensed', sans-serif; font-size: 23px; font-weight: 600; text-transform: uppercase; }
+.history-event p { max-width: 520px; margin: 0; color: #4a655d; font-size: 12px; line-height: 1.75; }
+.history-credit { grid-column: 2; margin: 19px 0 0; color: #71857b; font-size: 10px; line-height: 1.7; }
+.history-credit a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
 .flying-section { padding: 92px 0 76px; color: var(--paper); background: var(--green); }
 .flying-heading { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 52px; }
 .flying-heading .eyebrow, .gallery-heading .eyebrow, .membership-heading .eyebrow, .visit-content .eyebrow { color: #a7b9ac; }
@@ -168,6 +181,8 @@ h1, h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; letter-s
   .intro-copy { grid-template-columns: 1fr 1fr; gap: 5%; }
   .intro-stamp { right: 24px; bottom: 14px; width: 86px; height: 86px; }
   .intro-stamp strong { font-size: 21px; }
+  .history-inner { grid-template-columns: .8fr 1.2fr; column-gap: 6%; }
+  .history-event { grid-template-columns: 84px 1fr; gap: 13px; }
   .schedule-grid { gap: 32px; }
   .visit-content { padding: 48px 35px; }
   .visit-section, .visit-photo { min-height: 500px; }
@@ -204,6 +219,13 @@ h1, h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; letter-s
   .intro-description { max-width: none; }
   .intro-description p { font-size: 13px; }
   .intro-stamp { right: 5px; bottom: 12px; }
+  .history-section { padding: 70px 0 58px; }
+  .history-inner { grid-template-columns: 1fr; row-gap: 32px; }
+  .history-heading h2 { font-size: clamp(58px, 15vw, 82px); }
+  .history-event { grid-template-columns: 78px 1fr; gap: 12px; padding: 19px 0; }
+  .history-event h3 { font-size: 20px; }
+  .history-event p { font-size: 11px; }
+  .history-credit { grid-column: 1; margin-top: 0; }
   .flying-section { padding: 70px 0 57px; }
   .flying-heading { align-items: flex-start; flex-direction: column; gap: 19px; margin-bottom: 34px; }
   .flying-heading h2 { font-size: 66px; }
