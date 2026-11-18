@@ -82,7 +82,6 @@ h1, h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; letter-s
 .history-event h3 { margin: 0 0 7px; font-family: 'Barlow Condensed', sans-serif; font-size: 23px; font-weight: 600; text-transform: uppercase; }
 .history-event p { max-width: 520px; margin: 0; color: #4a655d; font-size: 12px; line-height: 1.75; }
 .history-credit { grid-column: 2; margin: 19px 0 0; color: #71857b; font-size: 10px; line-height: 1.7; }
-.history-credit a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
 
 .flying-section { padding: 92px 0 76px; color: var(--paper); background: var(--green); }
 .flying-heading { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 52px; }

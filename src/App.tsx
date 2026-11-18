@@ -50,23 +50,23 @@ const fees = [
 const clubHistory = [
   {
     period: 'Early 1970s',
-    title: 'Sunday mornings by the railway',
-    description: 'Northwick Park drew curious crowds to watch model aircraft. Flyers used a concrete cricket pitch beside the railway as an improvised runway.',
+    title: 'A cricket pitch becomes a runway',
+    description: 'Derek Morrison remembers Sunday mornings when spectators came to watch the models fly. A concrete cricket pitch beside the railway served as a runway, and the club brought together dozens of members for flying and regular meetings.',
   },
   {
-    period: 'A growing club',
-    title: 'A place to learn and belong',
-    description: 'Radio control brought new possibilities. Members flew together and gathered regularly, sharing their knowledge, aircraft and enthusiasm.',
+    period: 'Changing times',
+    title: 'Keeping the club airborne',
+    description: 'Noise rules and alternating access to the park made flying harder. The club tried a former RAF airfield at Bovington, but eventually activity faded and members re-formed elsewhere as the Phoenix club.',
   },
   {
-    period: 'Through change',
-    title: 'Finding a way to keep flying',
-    description: 'Changing access and noise restrictions brought difficult stretches, including a move away from the park. The club later found its way back to Northwick Park.',
+    period: 'A return to the park',
+    title: 'A familiar face takes flight',
+    description: 'Years later, Derek happened upon his former instructor Joe flying an electric model at Northwick Park. That chance meeting brought Derek back to flying and renewed his connection with the field.',
   },
   {
-    period: 'Today',
-    title: 'The story carries on',
-    description: 'Even after further changes to the field and flying arrangements, club members kept advocating for their place in the park—and kept flying.',
+    period: 'Still flying',
+    title: 'A place worth standing up for',
+    description: 'The club faced fresh limits on when and where it could fly, and later lost part of its field. Members continued to make the case for model flying at Northwick Park—and the tradition carries on.',
   },
 ]
 
@@ -160,7 +160,7 @@ function App() {
             <div className="intro-description">
               <p>From control-line engines to electric gliders and quadcopters, Northwick Park has seen generations of model flyers take to the air.</p>
               <p>Whether you have a model ready to go or are just curious, get in touch. The club can help you find your feet and get flying safely.</p>
-              <a className="text-link" href="https://www.northwickparkflyingclub.co.uk/about" target="_blank" rel="noreferrer">Read the club's story <ArrowUpRight size={15} /></a>
+              <a className="text-link" href="#story">Explore the club’s history <ArrowDown size={15} /></a>
             </div>
           </div>
           <div className="intro-stamp" aria-hidden="true"><span>EST.</span><strong>1970s</strong><span>AND STILL FLYING</span></div>
@@ -169,12 +169,9 @@ function App() {
         <section className="history-section" id="story">
           <div className="section-wrap history-inner">
             <div className="history-heading">
-              <p className="eyebrow">From the club’s archive <span className="section-index">02 / OUR STORY</span></p>
+              <p className="eyebrow">Derek Morrison’s recollections <span className="section-index">02 / OUR STORY</span></p>
               <h2>A field with<br /><span>a long story.</span></h2>
-              <p>Model flying has been part of Northwick Park for generations. Club member Derek Morrison recalls the people, changes and determination that kept it in the air.</p>
-              <a className="text-link" href="https://www.northwickparkflyingclub.co.uk/about" target="_blank" rel="noreferrer">
-                Read Derek’s full history <ArrowUpRight size={15} />
-              </a>
+              <p>From early Sunday crowds beside the railway to the club’s return to the park, this is a story of changing rules, familiar faces and a community determined to keep flying.</p>
             </div>
             <div className="history-timeline">
               {clubHistory.map((event) => (
@@ -187,7 +184,7 @@ function App() {
                 </article>
               ))}
             </div>
-            <p className="history-credit">A short retelling of Derek Morrison’s account, <a href="https://www.northwickparkflyingclub.co.uk/about" target="_blank" rel="noreferrer">published by Northwick Park Flying Club</a>.</p>
+            <p className="history-credit">Adapted from club member Derek Morrison’s account of Northwick Park’s model-flying history.</p>
           </div>
         </section>
 
