@@ -42,9 +42,9 @@ const icHours = [
 
 const fees = [
   { name: 'Club membership', amount: '£20', detail: 'per year' },
-  { name: 'BMFA insurance', amount: '£38', detail: 'per year' },
-  { name: 'CAA registration', amount: '£9', detail: 'via BMFA' },
-  { name: 'Brent Council permit', amount: '£44', detail: 'per year' },
+  { name: 'BMFA insurance', amount: '£51', detail: 'per year' },
+  { name: 'CAA registration', amount: '£12.34', detail: 'via BMFA' },
+  { name: 'Brent Council permit', amount: '£48', detail: 'per year' },
 ]
 
 function App() {
