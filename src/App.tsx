@@ -236,12 +236,15 @@ function App() {
             <p className="eyebrow">The field is closer than you think <span className="section-index">05 / FIND US</span></p>
             <h2>See you<br />at the <em>field.</em></h2>
             <p className="visit-copy">The flying site is in the field on the left-hand side of Northwick Park. Access is off Norval Road, with parking nearby inside the park grounds.</p>
-            <a className="button button-ink" href="https://www.google.com/maps/search/?api=1&query=Northwick+Park+Norval+Road+Harrow" target="_blank" rel="noreferrer">
+            <a className="button button-ink" href="https://www.google.com/maps/search/?api=1&query=51°34'19.6N+0°19'02.6W" target="_blank" rel="noreferrer">
               <MapPin size={17} /> Get directions <ArrowUpRight size={15} />
             </a>
             <p className="parking-note">Controlled parking on weekdays · Free parking at weekends</p>
           </div>
         </section>
+        {/* 51°34'19.6"N+0°19'02.6"W */}
+
+       { /*  https://www.google.com/maps/search/?api=1&query=Northwick+Park+Norval+Road+Harrow */}
 
         <section className="membership-section section-wrap" id="membership">
           <div className="membership-heading">
